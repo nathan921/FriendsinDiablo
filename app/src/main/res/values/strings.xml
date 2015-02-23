@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Friends in Diablo</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_main">MainActivity</string>
+
+<!-- Item Display Layout Strings -->
+    <string name="neck">Neck</string>
+    <string name="helm">Helm</string>
+    <string name="wrist">Wrist</string>
+    <string name="shoulders">Shoulders</string>
+    <string name="gloves">Gloves</string>
+    <string name="chest">Chest</string>
+    <string name="belt">Belt</string>
+    <string name="pants">Pants</string>
+    <string name="boots">Boots</string>
+    <string name="left_hand_weapon">Left Hand Weapon</string>
+    <string name="right_hand_weapon">Right Hand Weapon</string>
+    <string name="left_ring">Left Ring</string>
+    <string name="right_ring">Right Ring</string>
+
+
+</resources>

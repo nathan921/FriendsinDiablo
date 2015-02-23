@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="5"
+            android:rowCount="10"
+            android:background="@drawable/player_item_background">
+
+    <!-- Neck ImageView -->
+    <ImageView
+        android:contentDescription="@string/neck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/neckItemImage"
+        android:layout_gravity="fill"
+        android:src="@drawable/placeholder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="72dp"/>
+
+    <!-- Left Ring ImageView -->
+    <ImageView
+        android:contentDescription="@string/left_ring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftRingImage"
+        android:src="@drawable/placeholder"
+        android:layout_marginTop="172dp"
+        android:layout_below="@+id/neckItemImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <!-- Right Ring ImageView -->
+    <ImageView
+        android:contentDescription="@string/right_ring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightRingImage"
+        android:src="@drawable/placeholder"
+        android:layout_alignTop="@+id/leftRingImage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"/>
+
+    <!-- Shoulder ImageView -->
+    <ImageView
+        android:contentDescription="@string/shoulders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:id="@+id/shoulderImage"
+        android:src="@drawable/placeholder_gear"
+        android:layout_above="@+id/handImage"
+        android:layout_toLeftOf="@+id/chestImage"
+        android:layout_toStartOf="@+id/chestImage"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Pants ImageView -->
+    <ImageView
+        android:contentDescription="@string/pants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pantsImage"
+        android:background="@drawable/placeholder_gear"
+        android:layout_alignTop="@+id/leftRingImage"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Boots ImageView -->
+    <ImageView
+        android:contentDescription="@string/boots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bootImage"
+        android:src="@drawable/placeholder_gear"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_alignLeft="@+id/pantsImage"
+        android:layout_alignStart="@+id/pantsImage"/>
+
+    <!-- Hands ImageView -->
+    <ImageView
+        android:contentDescription="@string/gloves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/handImage"
+        android:src="@drawable/placeholder_gear"
+        android:layout_above="@+id/pantsImage" />
+
+    <!-- Wrist ImageView -->
+    <ImageView
+        android:contentDescription="@string/wrist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/wristImage"
+        android:src="@drawable/placeholder_gear"
+        android:layout_above="@+id/rightRingImage" />
+
+    <!-- Head ImageView -->
+    <ImageView
+        android:contentDescription="@string/helm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/headImage"
+        android:src="@drawable/placeholder_head"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/pantsImage"
+        android:layout_alignStart="@+id/pantsImage"/>
+
+    <!-- Chest ImageView -->
+    <ImageView
+        android:contentDescription="@string/chest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:id="@+id/chestImage"
+        android:src="@drawable/placeholder_chest"
+        android:layout_below="@+id/headImage"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Right Hand Weapon ImageView -->
+    <ImageView
+        android:contentDescription="@string/right_hand_weapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:id="@+id/rightHandWeaponImage"
+        android:src="@drawable/placeholder_weapon"
+        android:layout_alignBottom="@+id/bootImage"
+        android:layout_alignParentLeft="true" />
+
+    <!-- Left Hand Weapon ImageView -->
+    <ImageView
+        android:contentDescription="@string/left_hand_weapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftHandWeaponImage"
+        android:src="@drawable/placeholder_weapon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_alignBottom="@+id/bootImage" />
+
+    <!-- Belt ImageView -->
+    <ImageView
+        android:contentDescription="@string/belt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/beltImage"
+        android:src="@drawable/placeholder_belt"
+        android:layout_above="@+id/pantsImage"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
