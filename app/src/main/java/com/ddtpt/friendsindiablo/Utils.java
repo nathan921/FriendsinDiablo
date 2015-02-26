@@ -9,6 +9,7 @@ import com.google.gson.reflect.TypeToken;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -40,13 +41,21 @@ public class Utils {
         Gson gson = new Gson();
 
         try {
-            InputStream in = mContext.openFileInput(mFileName);
-            reader = new BufferedReader(new InputStreamReader(in));
-            String json = reader.readLine();
-            careers = gson.fromJson(json, new TypeToken<ArrayList<String>>() {}.getType());
+            File file = new File(mContext.getFilesDir(), mFileName);
+            if (file.exists()) {
+                InputStream in = mContext.openFileInput(mFileName);
+                reader = new BufferedReader(new InputStreamReader(in));
+                String json = reader.readLine();
+                if (json != null) {
+                    careers = gson.fromJson(json, new TypeToken<ArrayList<String>>() {
+                    }.getType());
+                }
+            } else {
+                file.createNewFile();
+            }
 
         }catch(IOException e) {
-            Log.e("UTILS", "IO Exception occurred on get");
+            Log.e("UTILS", e.toString());
         }
 
         return careers;

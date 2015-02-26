@@ -9,4 +9,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <ImageButton
+        android:id="@+id/add_button"
+        android:layout_width="@dimen/round_button_diameter"
+        android:layout_height="@dimen/round_button_diameter"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/fab_button_margin"
+        android:layout_marginRight="@dimen/fab_button_margin"
+        android:tint="@android:color/white"
+        android:background=""
+        android:src="@android:drawable/ic_input_add" />
+
+
+
 </FrameLayout>
