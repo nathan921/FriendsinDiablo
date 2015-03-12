@@ -5,22 +5,35 @@ package com.ddtpt.friendsindiablo;
  */
 public class HeroStats {
 
-    private String mName;
-    private String mLevel;
-
-    public String getName() {
-        return mName;
-    }
-
-    public void setName(String name) {
-        mName = name;
-    }
-
-    public String getLevel() {
-        return mLevel;
-    }
-
-    public void setLevel(String level) {
-        mLevel = level;
-    }
+    int life;
+    double damage;
+    double toughness;
+    double healing;
+    double attackSpeed;
+    int armor;
+    int strength;
+    int dexterity;
+    int vitality;
+    int intelligence;
+    int physicalResist;
+    int fireResist;
+    int coldResist;
+    int lightningResist;
+    int poisonResist;
+    int arcaneResist;
+    double critDamage;
+    double blockChance;
+    int blockAmountMin;
+    int blockAmountMax;
+    double damageIncrease;
+    double critChance;
+    double damageReduction;
+    double thorns;
+    double lifeSteal;
+    double lifePerKill;
+    double goldFind;
+    double magicFind;
+    double lifeOnHit;
+    int primaryResource;
+    int secondaryResource;
 }

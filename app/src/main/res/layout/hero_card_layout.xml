@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/elevation_high"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardBackgroundColor="#BBBBBB"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/character_icon"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/barbarian_male"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/character_name"
+            android:layout_alignBottom="@+id/char_class"
+            />
+
+        <TextView
+            android:id="@+id/character_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UncleJoeyIII"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/character_icon"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/hardcore_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_dialog_alert"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignTop="@+id/character_name"
+            android:layout_alignParentRight="true"
+            />
+
+        <ImageView
+            android:id="@+id/seasonal_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_upload"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/hardcore_image"
+            android:layout_alignTop="@+id/character_name"
+
+            />
+        <TextView
+            android:id="@+id/char_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Barbarian"
+            android:layout_below="@+id/character_name"
+            android:layout_alignLeft="@+id/character_name"
+            android:layout_marginBottom="16dp"
+            />
+        <TextView
+            android:id="@+id/paragon_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P222"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/char_class"
+            android:layout_alignTop="@id/char_class"
+            android:layout_alignLeft="@+id/seasonal_image"
+            android:layout_marginBottom="16dp"
+            />
+
+
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>

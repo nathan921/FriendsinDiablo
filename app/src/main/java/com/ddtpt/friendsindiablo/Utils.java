@@ -6,8 +6,6 @@ import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,12 +14,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.io.Reader;
+
 import java.io.Writer;
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+
 
 /**
  * Created by e228596 on 2/24/2015.
@@ -50,9 +47,11 @@ public class Utils {
                     careers = gson.fromJson(json, new TypeToken<ArrayList<String>>() {
                     }.getType());
                 }
+                reader.close();
             } else {
                 file.createNewFile();
             }
+
 
         }catch(IOException e) {
             Log.e("UTILS", e.toString());
@@ -71,11 +70,11 @@ public class Utils {
             String json = new Gson().toJson(careers);
 
             writer.write(json);
+            writer.close();
         } catch (FileNotFoundException e) {
             Log.e("UTILS", "File was not found to write data");
         } catch (IOException e) {
             Log.e("UTILS", "IO Exception Occurred");
         }
-
     }
 }
